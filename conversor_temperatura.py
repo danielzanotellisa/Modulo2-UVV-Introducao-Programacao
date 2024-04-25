@@ -16,12 +16,12 @@ temp= int(input('Insira a temperatura para ser convertida: '))
 if escolha == 'F':
 
     temp_fahrenheit = conversor_fahrenheit(temp)
-    print(f'A temperatura {temp} convertida para Fahrenheit é {temp_fahrenheit}.')
+    print(f'A temperatura {temp} convertida para Fahrenheit é {temp_fahrenheit:.1f}.')
 
 elif escolha == 'C':
 
     temp_celsius = conversor_celsius(temp)
-    print(f'A temperatura {temp} convertida para Celsius é {temp_celsius}.')
+    print(f'A temperatura {temp} convertida para Celsius é {temp_celsius:.1f}.')
 else:
     print('Desculpe não sei oque fazer')
 
