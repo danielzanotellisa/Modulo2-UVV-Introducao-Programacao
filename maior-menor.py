@@ -3,7 +3,7 @@ print('Nesse programa iremos criar uma lista de 3 números e ao final saberemos 
 lista_numeros = []
 
 while True:
-    
+        
     numeros = int(input('Insira um número: '))
     lista_numeros.append(numeros)
 
