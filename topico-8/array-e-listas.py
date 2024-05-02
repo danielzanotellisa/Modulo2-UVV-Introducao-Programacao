@@ -32,10 +32,16 @@ exibir = np.arange(minimo, maximo + 1)
 random_number = rd.randrange(minimo, maximo + 1)
 
 
-teste_arr = [1,2,3,4,5,6]
+chute = int(input('Digite um número aleatório'))
 
-retira = np.setdiff1d(exibir, teste_arr )
+faixa_ret = np.arange(min(exibir), chute + 1)
+
+if len(exibir) > len(faixa_ret):
+    retira = np.setdiff1d(exibir, faixa_ret )
+else:
+    retira = np.setdiff1d(faixa_ret, exibir)
 
 print(exibir)
 print(random_number)
+print(faixa_ret)
 print(retira)
