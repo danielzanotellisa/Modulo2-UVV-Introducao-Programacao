@@ -15,15 +15,14 @@ pergunta3 = 'Mora perto da vítima? '
 pergunta4 = 'Devia para a vítima? '
 pergunta5 = 'Ja trabalhou com a vitima? '
 lista_perguntas = [pergunta1, pergunta2, pergunta3, pergunta4,pergunta5]
-while len(respostas) < 5:
 
-    for pergunta in lista_perguntas:
-        pergunta = str.upper((input(f'{pergunta}')))
-        if pergunta.upper() == 'S':
-            respostas.append(pergunta)
-        else:
-            pergunta = 'N'
-            respostas.append(pergunta)
+for pergunta in lista_perguntas:
+    pergunta = str.upper((input(f'{pergunta}')))
+    if pergunta.upper() == 'S':
+        respostas.append(pergunta)
+    else:
+        pergunta = 'N'
+        respostas.append(pergunta)
 
 
 if respostas.count('S') == 2:
